@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #faf8f5;
+    color: #18181b;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+/* 2016 Vibrant Editorial Shadows & Surfaces */
+.vibrant-card {
+  background-color: #ffffff;
+  border: 1px solid rgba(24, 24, 27, 0.08);
+  box-shadow: 0 12px 32px -4px rgba(24, 28, 38, 0.06), 0 4px 12px -2px rgba(24, 28, 38, 0.03);
+}
+
+.vibrant-card-pop {
+  transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.vibrant-card-pop:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 20px 40px -6px rgba(24, 28, 38, 0.1), 0 6px 16px -2px rgba(24, 28, 38, 0.05);
+}
+
+.vibrant-pill {
+  background: #ffffff;
+  border: 1px solid rgba(24, 24, 27, 0.1);
+  box-shadow: 0 8px 24px -2px rgba(24, 28, 38, 0.08);
+}
+
+/* Crisp scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(24, 24, 27, 0.18);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(24, 24, 27, 0.32);
+}

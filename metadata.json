@@ -1,0 +1,6 @@
+{
+  "name": "Aura 27 — Next-Gen AI Code Studio",
+  "description": "Ultra-modern iOS 27 inspired intelligent coding assistant featuring fluid glassmorphism, dynamic temperature control, image perception, syntax highlighted code execution, and Meta Muse Glimmer intelligence.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
